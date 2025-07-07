@@ -1,0 +1,132 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Tipografía y colores */
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+  padding: 1rem;
+}
+
+/* Navegación */
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+header nav .logo {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+header nav ul li a {
+  color: #0077cc;
+  text-decoration: none;
+}
+
+header nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Características */
+.caracteristicas-container {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.tarjeta {
+  background: #e0e0e0;
+  padding: 1rem;
+  flex: 1 1 200px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+/* Galería */
+.galeria {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.img-contenedor {
+  width: 180px;
+  text-align: center;
+}
+
+.img-contenedor img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+/* Testimonios */
+.testimonios-container {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.testimonio {
+  background: #d0f0d0;
+  padding: 1rem;
+  flex: 1 1 250px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #666;
+  border-top: 1px solid #ccc;
+  padding-top: 1rem;
+}
+
+footer .terminos {
+  margin-top: 0.5rem;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+footer .terminos a {
+  color: #0077cc;
+  text-decoration: none;
+}
+
+footer .terminos a:hover {
+  text-decoration: underline;
+}
+
+/* Media queries simples */
+@media (max-width: 600px) {
+  .caracteristicas-container,
+  .galeria,
+  .testimonios-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .img-contenedor {
+    width: 100%;
+  }
+}
